@@ -5,7 +5,7 @@ class HeadsetTile extends StatelessWidget {
  final String headName;
  final String headPrice;
 
- HeadsetTile({
+ const HeadsetTile({
    required this.headImagePath, required this.headName,
    required this.headPrice,
 });
@@ -21,7 +21,7 @@ class HeadsetTile extends StatelessWidget {
         width: 200,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
-          color: Colors.cyan[200],
+          color: Colors.black,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -40,14 +40,14 @@ class HeadsetTile extends StatelessWidget {
                 children:  [
                   Text(
                       headName,
-                  style: TextStyle(fontSize: 20),
+                  style: const TextStyle(fontSize: 20),
                   ),
 
-                  SizedBox(height: 4),
-                  Text(
-                    'Subtitle message',
+                  const SizedBox(height: 4),
+                  const Text(
+                    'Learn More',
                     style: TextStyle(
-                        color: Colors.black,
+                        color: Colors.grey,
                     ),
                   ),
                 ],
@@ -62,24 +62,16 @@ class HeadsetTile extends StatelessWidget {
                 children: [
                 Text('\£' + headPrice),
                 Container(
-                  padding: EdgeInsets.all(4),
+                  padding: const EdgeInsets.all(4),
                     decoration: BoxDecoration(
                         color: Colors.cyan,
                       borderRadius: BorderRadius.circular(6),
                     ),
 
-                    child: Icon(Icons.add)),
+                    child: const Icon(Icons.add)),
               ],
               ),
             ),
-
-
-
-
-
-
-
-
           ],
         ),
       ),

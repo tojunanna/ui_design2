@@ -15,12 +15,15 @@ class _HomePageState extends State<HomePage> {
 
   //list of headset
   final List headSet = [
-    ['Apple', true,],
-    ['Nike', false,],
-    ['Apple', false,],
-    ['Apple', false,],
-    ['Apple', false,],
-    ['Apple', false,],
+    ['Airpod', true,],
+    ['Shokz', true,],
+    ['Bluetooth', false,],
+    ['Turtle', false,],
+    ['Sony', false,],
+    ['JVC', false,],
+    ['Airpod', false,],
+    ['Shokz', false,],
+
   ];
   // user tapped on
   void headsetTypeSelected( int index) {
@@ -117,19 +120,41 @@ const SizedBox(height: 20),
                 children:  [
                   HeadsetTile(
                     headImagePath: 'images/1.jpg',
-                    headName: 'headset',
-                    headPrice: '70',
+                    headName: 'Sony WH-CH510',
+                    headPrice: '170',
                   ),
                   HeadsetTile(
                     headImagePath: 'images/2.jpg',
-                    headName: 'headset2',
-                    headPrice: '70',
+                    headName: 'JVC Lightweight',
+                    headPrice: '220',
                   ),
                   HeadsetTile(
                     headImagePath: 'images/3.jpg',
-                    headName: 'headset3',
-                    headPrice: '70',
+                    headName: 'Otium Bluetooth',
+                    headPrice: '600',
                   ),
+
+                  HeadsetTile(
+                    headImagePath: 'images/5.jpg',
+                    headName: 'Turtle Beach',
+                    headPrice: '330',
+                  ),
+                  HeadsetTile(
+                    headImagePath: 'images/4.jpg',
+                    headName: 'Logitech H111',
+                    headPrice: '400',
+                  ),
+                  HeadsetTile(
+                    headImagePath: 'images/5.jpg',
+                    headName: 'Bluetooth Headphone',
+                    headPrice: '150',
+                  ),
+                  HeadsetTile(
+                    headImagePath: 'images/3.jpg',
+                    headName: 'Shokz Openrun',
+                    headPrice: '200',
+                  ),
+
 
                 ],
               )
